@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ post.title }}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Travel Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <a href="{% url 'home' %}" class="btn">Home</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>{{ post.title }}</h2>
+            <p><strong>Posted on:</strong> {{ post.created_at }}</p>
+            <div class="post-content">
+                <p>{{ post.content }}</p>
+            </div>
+
+            {% if post.image %}
+                <div class="post-image">
+                    <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                </div>
+            {% else %}
+                <p>No image available for this post.</p>
+            {% endif %}
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Travel Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>

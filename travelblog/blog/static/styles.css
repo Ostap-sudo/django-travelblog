@@ -1,0 +1,82 @@
+/* Загальні стилі для body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Легкий фон */
+    height: 100vh; /* Висота на весь екран */
+    background-size: cover;
+    animation: backgroundAnimation 10s infinite; /* Анімація фону */
+}
+
+/* Шапка */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* Центруємо текст */
+}
+
+/* Меню */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Центруємо меню */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Основний контент */
+main {
+    padding: 20px;
+    text-align: center; /* Центруємо текст в основному контенті */
+}
+
+/* Список постів */
+ul {
+    padding-left: 0;
+    list-style-type: none; /* Вимикаємо маркери списку */
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Футер */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center; /* Центруємо текст */
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Анімація для фону */
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #ff7f50; /* кораловий */
+    }
+    25% {
+        background-color: #6a5acd; /* синій */
+    }
+    50% {
+        background-color: #3cb371; /* зелений */
+    }
+    75% {
+        background-color: #ff6347; /* червоний */
+    }
+    100% {
+        background-color: #ff7f50; /* кораловий */
+    }
+}
