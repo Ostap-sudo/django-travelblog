@@ -19,7 +19,7 @@ This is a travel blog application built with Django. The project allows users to
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/travel-blog.git
+   git clone [https://github.com/your-username/travel-blog.git](https://github.com/Ostap-sudo/django-travelblog.git)
    cd travel-blog
 Create a virtual environment:
 bash
