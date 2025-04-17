@@ -11,6 +11,8 @@ This is a travel blog application built with Django. The project allows users to
 - pillow==11.2.0
 - sqlparse==0.5.3
 - tzdata==2025.2
+- CSS/HTML templates** for styling
+- Bootstrap** (if used for styling)
 
 ## Installation
 
